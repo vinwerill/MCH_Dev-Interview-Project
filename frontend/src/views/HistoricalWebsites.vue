@@ -20,8 +20,27 @@
   </div>
 </template>
 
+
 <script>
 // TODO: Fetch websites data from API
+import axios from 'axios'
+
+export default {
+  data() {
+    return {
+      websites: []
+    };
+  },
+  mounted() {
+    axios.get('https://mch-dev.userwei.com/api/websites')
+      .then(response => {
+        this.websites = response.data;
+      })
+      .catch(error => {
+        console.error("There was an error fetching the websites data:", error);
+      });
+  }
+};
 </script>
 
 <style scoped>
@@ -40,6 +59,14 @@
 
 .websites-grid {
   /* TODO: Add styles for a responsive grid layout */
+  display: grid;
+  @media (width >= 1024px) {
+    grid-template-columns: auto auto auto;
+  }
+  @media (width < 768px) {
+    grid-template-columns: auto;
+  }
+  gap: 10px;
 }
 
 .website-card {
