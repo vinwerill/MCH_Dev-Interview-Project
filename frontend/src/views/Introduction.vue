@@ -21,8 +21,8 @@
       </ul>
       <h3>相關作品成果</h3>
       <ul>
-        <li>現今網站：<a href="https://kssasite.com/" target="_blank">https://kssasite.com/</a></li>
-        <li>網頁repo：<a href="https://github.com/vinwerill/kssasite" target="_blank">https://github.com/vinwerill/kssasite</a></li>
+        <li>現今網站：<a href="https://kssasite.com/" target="_blank" style="color: blue;">https://kssasite.com/</a></li>
+        <li>網頁repo：<a href="https://github.com/vinwerill/kssasite" target="_blank" style="color: blue;">https://github.com/vinwerill/kssasite</a></li>
       </ul>
     </section>
   </div>
