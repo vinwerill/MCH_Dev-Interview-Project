@@ -25,17 +25,29 @@
 // TODO: Fetch websites data from API
 import axios from 'axios'
 
+// export default {
+//   data() {
+//     return {
+//       websites: []
+//     };
+//   },
+//   mounted() {
+//     axios.get('https://mch-dev.userwei.com/api/websites')
+//       .then(response => {
+//         this.websites = response.data;
+//       })
+//   }
+// };
+var data;
+axios.get('https://mch-dev.userwei.com/api/websites')
+      .then(response => {
+        data = response.data;
+      })
 export default {
   data() {
     return {
-      websites: []
+      websites: data
     };
-  },
-  mounted() {
-    axios.get('https://mch-dev.userwei.com/api/websites')
-      .then(response => {
-        this.websites = response.data;
-      })
   }
 };
 </script>
