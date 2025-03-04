@@ -36,9 +36,6 @@ export default {
       .then(response => {
         this.websites = response.data;
       })
-      .catch(error => {
-        console.error("There was an error fetching the websites data:", error);
-      });
   }
 };
 </script>
